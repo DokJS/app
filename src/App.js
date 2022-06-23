@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Heroe from './Components/Heroe/Heroe';
 import Best from './Components/Best/Best';
+import Featured from './Components/Featured/Featured';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Heroe />
       <Best />
+      <Featured/>
     </>
   )
 }
