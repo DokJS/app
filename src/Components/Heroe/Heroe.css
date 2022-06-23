@@ -23,15 +23,17 @@
 .heroe .content{
     width:100%;
     max-width:762px;
+    font-family: 'Raleway', sans-serif;
 }
 .heroe .content h1{
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 30px;
     text-align: center;
+    text-transform: capitalize;
 }
 
-.heroe .content .search-text{
+.heroe  .search-text{
     width: 100%;
     max-width: 615px;
     margin: 0 auto;
@@ -44,7 +46,7 @@
 .heroe .content .search{
     background-color: white;
     border:none;
-    width: 100%;
+    width: 97%;
     max-width: 670px;
     margin: 0 auto;
     display: flex;
@@ -55,18 +57,21 @@
     color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding : 4px;
 }
 .search div:not(.radio){
     width: calc(100% - 180px);
 }
-input[type='text']{
+.search input[type='text']{
     width: 100%;
     height: 100%;
     padding: 8px;
-    border: none;
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.2rem;
 }
-input[type='text']:focus{
+.search input[type='text']:focus{
     outline: none;
 }
 ::placeholder{
@@ -92,10 +97,12 @@ input[type='radio']{
     align-self: center;
 }
 .heroe .content .radio button {
-        border: none;
-    background: rgb(104,133,246);
+    border: 1px solid rgb(104,133,246);
+    background-image:linear-gradient(45deg,#5651e5 0%,#709dff 100%);
+    color:white;
+    border-radius:8px;
+    cursor: pointer;
     padding: 10px;
-    border-radius: 9px;
 }
 
 .heroe .content .radio button .icon
@@ -103,7 +110,17 @@ input[type='radio']{
     font-size: 1.3rem;
     color: white;
 }
-
+@media screen and (max-width:650px){
+    .heroe{
+        height:70vh;
+    }
+    .heroe .content h1{
+        font-size: 2.6rem;
+    }
+    .heroe .content p {
+        font-size: 1rem;
+    }
+}
 
 
 
