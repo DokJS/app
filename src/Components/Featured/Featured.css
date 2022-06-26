@@ -1,0 +1,60 @@
+.featured{
+    margin-top: 87px;
+}
+.featured h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.featured p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container.featured{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3,302px);
+    gap:1.2rem;
+    grid-template-areas: "main main main bed1 bed2"
+                         "main main main kitch bath"
+                         "btm btm btm btm btm";
+}
+.featured img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.main-image{
+    grid-area: main;
+}
+.bedroom-center{
+    grid-area: bed1;
+}
+.bedroom-right{
+    grid-area: bed2;
+}
+
+.kitchen{
+    grid-area: kitch;
+}
+.bathroom{
+    grid-area: bath;
+}
+.container.featured .bottom{
+   grid-area: btm;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+ .bottom .descritption-left{
+   width: 60%;
+   height: 100%;
+}
+
+.container.featured .bottom .description-right{
+    width: 40%;
+    height: 100%;
+}

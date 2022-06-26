@@ -1,0 +1,132 @@
+.heroe{
+    background-color: rgba(0, 0, 0, 0.4);
+    color:white;
+    width: 100%;
+    height: 88vh;
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroe:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url('../..//assets/hero-img.jpg') no-repeat center/cover;
+    z-index: -1;
+}
+.heroe .content{
+    width:100%;
+    max-width:762px;
+    font-family: 'Raleway', sans-serif;
+}
+.heroe .content h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.heroe  .search-text{
+    width: 100%;
+    max-width: 615px;
+    margin: 0 auto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.heroe .content .search{
+    background-color: white;
+    border:none;
+    width: 97%;
+    max-width: 670px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 50px;
+    max-height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 4px;
+}
+.search div:not(.radio){
+    width: calc(100% - 180px);
+}
+.search input[type='text']{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+.search input[type='text']:focus{
+    outline: none;
+}
+::placeholder{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.heroe .content .radio {
+    width: 170px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.heroe .content .radio div {
+    display: flex;
+    gap: 4px;
+    width: 30%;
+}
+
+input[type='radio']{
+    align-self: center;
+}
+.heroe .content .radio button {
+    border: 1px solid rgb(104,133,246);
+    background-image:linear-gradient(45deg,#5651e5 0%,#709dff 100%);
+    color:white;
+    border-radius:8px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.heroe .content .radio button .icon
+{
+    font-size: 1.3rem;
+    color: white;
+}
+@media screen and (max-width:650px){
+    .heroe{
+        height:70vh;
+    }
+    .heroe .content h1{
+        font-size: 2.6rem;
+    }
+    .heroe .content p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
