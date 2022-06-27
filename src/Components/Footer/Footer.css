@@ -4,13 +4,14 @@
     padding: 60px 0 30px 0;
 }
 
-
+    /* Container Layout */
 .footer .container {
     display: flex;
     flex-direction: column;
     gap: 80px;
 }
 
+    /* Icons container */
 .footer .container .container__top {
     display: grid;
     max-width: 440px;
@@ -20,12 +21,13 @@
     place-items: center;
 
 }
-
+    /* Icons styles */
 .footer .container .container__top .footer-icon {
     font-size: 2rem;
     color: #5651E5;
 }
 
+    /* Lists container */
 .footer .container .container__bottom {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -38,6 +40,7 @@
     text-transform: capitalize;
 }
 
+    /* lists' title styles */
 .footer .container .container__bottom caption {
     font-size: 19px;
     font-weight: 700;
@@ -45,6 +48,7 @@
 
 }
 
+    /* list's items styles */
 .footer .container .container__bottom ul {
     display: flex;
     flex-direction: column;

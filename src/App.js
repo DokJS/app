@@ -11,8 +11,9 @@ const App = () => {
     <>
       {/* <Navbar/>
       <Heroe/>
-      <Best/> */}
-      <Footer/>
+      <Best/>
+      <Footer/> */}
+      <Featured/>
     </>
   )
 }
